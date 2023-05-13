@@ -41,7 +41,6 @@
 
 - 📲 [PWA](https://github.com/vite-pwa/nuxt) with offline support and auto update behavior.
 
-
 ## Plugins
 
 ### Nuxt Modules
@@ -64,7 +63,7 @@ We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https:
 - [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
 - [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
 
-## Try it now!
+## Try it now
 
 ### Online
 
@@ -83,3 +82,7 @@ npx degit antfu/vitesse-nuxt3 my-nuxt3-app
 cd my-nuxt3-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
+
+## 注意事项
+
+Windows 下请使用 NPM 打包，因为使用 PNPM 打包后，`.output/server/node_modules` 中存在 Symbolic Link 的模块，会导致部署失败。
