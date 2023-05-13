@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  nuxt3_demo:
+    build:
+      context: .
+    image: nuxt3-demo
+    container_name: nuxt3-demo
+    ports:
+      - "3000:3000"

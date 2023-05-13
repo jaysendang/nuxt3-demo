@@ -5,12 +5,14 @@
     "build": "nuxi build",
     "dev": "nuxi dev",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
-    "start": "node .output/server/index.mjs",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
     "postinstall": "nuxi prepare",
     "generate": "nuxi generate",
-    "start:generate": "npx serve .output/public"
+    "start:generate": "npx serve .output/public",
+    "start": "pm2 start ecosystem.config.js",
+    "stop": "pm2 stop ecosystem.config.js",
+    "restart": "pm2 restart ecosystem.config.js"
   },
   "dependencies": {
     "vue-tsc": "^1.6.4"
