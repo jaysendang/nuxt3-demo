@@ -8,7 +8,7 @@ WORKDIR /app
 
 # 复制打包产物至容器目录内
 COPY .output ./.output
-COPY package.json pnpm-lock.yaml .npmrc ecosystem.config.js ./
+COPY package.json package-lock.json .npmrc ecosystem.config.js ./
 
 # 对外暴露容器运行端口
 EXPOSE 3000

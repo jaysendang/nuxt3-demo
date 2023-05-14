@@ -1,6 +1,8 @@
 {
+  "name": "nuxt3-demo",
+  "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@8.5.0",
+  "packageManager": "npm@9.5.1",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
