@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+
+  nuxt3-demo:
+    build:
+      context: .
+    image: nuxt3-demo
+    container_name: nuxt3-demo
+    ports:
+      - "3000:3000"
+    args:
+      BUILD_ENV: prod
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - "/var/logs/nuxt3-demo:/app/logs"
+    restart: always
