@@ -9,6 +9,8 @@ services:
     container_name: nuxt3-demo
     ports:
       - "3000:3000"
+    args:
+      BUILD_ENV: dev
     environment:
       TZ: Asia/Shanghai
     volumes:
