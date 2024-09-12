@@ -32,4 +32,4 @@ COPY --from=build /app/.npmrc /app/package.json /app/pnpm-lock.yaml /app/ecosyst
 EXPOSE 3000
 
 # 容器启动命令
-CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
+CMD [ "pm2-runtime", "start", "pm2.config.js" ]
