@@ -14,9 +14,9 @@
     "build:test": "nuxi build --dotenv .env.test",
     "build:prod": "nuxi build --dotenv .env.production",
     "start:generate": "npx serve .output/public",
-    "start": "pm2 start pm2.config.js",
-    "stop": "pm2 stop pm2.config.js",
-    "restart": "pm2 restart pm2.config.js"
+    "start": "pm2 start pm2.config.cjs",
+    "stop": "pm2 stop pm2.config.cjs",
+    "restart": "pm2 restart pm2.config.cjs"
   },
   "dependencies": {
     "dayjs": "^1.11.13",
