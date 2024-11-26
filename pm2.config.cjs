@@ -2,6 +2,7 @@ module.exports = {
   apps: [{
     name: 'nuxt3-demo',
     script: './.output/server/index.mjs',
+    port: '3000',
     exec_mode: 'cluster_mode',
     min_uptime: '60s',
     instances: 4,
